@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring16mvchello" />
+    <file type="web" url="file://$PROJECT_DIR$/spring18mvcmappering" />
+    <file type="web" url="file://$PROJECT_DIR$/spring19mvcrecivedate" />
+    <file type="web" url="file://$PROJECT_DIR$/spring20mvatestinsert" />
+    <file type="web" url="file://$PROJECT_DIR$/spring21validation" />
+    <file type="web" url="file://$PROJECT_DIR$/spring22mvcview" />
+    <file type="web" url="file://$PROJECT_DIR$/spring23mvcjson" />
+    <file type="web" url="file://$PROJECT_DIR$/spring24lanjieqitest" />
+    <file type="web" url="file://$PROJECT_DIR$/spring25mvcfile" />
+    <file type="web" url="file://$PROJECT_DIR$/spring28ssmxm" />
+    <file type="web" url="file://$PROJECT_DIR$/spring29duoduo/web" />
+    <file type="web" url="file://$PROJECT_DIR$/spring30serveltcode" />
+    <file type="web" url="file://$PROJECT_DIR$/spring32ssmcode" />
+    <file type="web" url="file://$PROJECT_DIR$/springcodemybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/springdbutilsdruid" />
+    <file type="web" url="file://$PROJECT_DIR$/springmybatisduridbetter" />
+    <file type="web" url="file://$PROJECT_DIR$/springmybatisduridbetter2" />
+    <file type="web" url="file://$PROJECT_DIR$/springtxtest" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring22vcview/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

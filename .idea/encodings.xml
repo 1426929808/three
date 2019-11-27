@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring01context" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring02ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring03autowire" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring04logback" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring16mvchello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring18mvcmappering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring19mvcrecivedate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring20mvatestinsert" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring21validation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring22mvcview" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring23mvcjson" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring24lanjieqitest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring25mvcfile" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring28ssmxm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring29duoduo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring29duoduo/dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring29duoduo/entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring29duoduo/service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring29duoduo/web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring30serveltcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring32ssmcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springannotationcontaineriocaop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springannotationtx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springaop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springaopadvice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springaopadvicepoint" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springaopadvisor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcodecontaineriocaoptx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcodemybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springdbutilsdruid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmybatisduird" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmybatisduridbetter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmybatisduridbetter2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springtx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springtxmybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springtxtest" charset="UTF-8" />
+  </component>
+</project>

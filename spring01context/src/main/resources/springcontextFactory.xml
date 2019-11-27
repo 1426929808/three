@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--这种配置方法createA方法必须是静态的-->
+<!--<bean id="factory" class="com.factory.AFactory" factory-method="createA">-->
+
+<!--</bean>-->
+
+    <!--这种配置方法createB方法是实例的-->
+    <bean id="factory" class="com.factory.AFactory">
+
+    </bean>
+    <bean id="factory2" factory-bean="factory" factory-method="createB">
+
+    </bean>
+
+
+    <!--
+    下面配置方式返回的A这个类的实例
+    原因是因为MyFactoryBean这个类实现了FactoryBean这个接口
+
+    如果没有这个实现,那么返回的就是MyFactoryBean这个实例本身
+    -->
+    <bean id="factory3" class="com.factory.MyFactoryBean" ></bean>
+</beans>

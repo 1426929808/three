@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.dao.EmployeeDao2">
+    <select id="getAll" resultType="com.nf.entity.Employee">
+        select id,username,sex,salary
+        from employee order by id
+    </select>
+    <insert id="insert">
+        insert into employee(username, sex, salary)
+        values (#{username},#{sex},#{salary})
+    </insert>
+    <delete id="deleteByDeptId">
+        delete from employee where id = #{deptid}
+    </delete>
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="myAdvisor" class="com.advisor.MyAdvisor"></bean>
+    <bean id="studentService" class="com.service.serviceImpl.StudentServiceImpl"></bean>
+    <aop:config>
+        <aop:pointcut id="myPointcut" expression="execution(* com.service..*.*(..))"/>
+        <aop:advisor advice-ref="myAdvisor" pointcut-ref="myPointcut"></aop:advisor>
+    </aop:config>
+
+</beans>

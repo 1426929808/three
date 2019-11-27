@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dept" class="com.test.DepeImpl"></bean>
+    <bean id="emp" class="com.test.EmpImpl"></bean>
+    <bean id="service" class="com.test.EmployeeServiceImpl"></bean>
+    <bean id="test" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="service"></property>
+        <property name="interfaces">
+            <list>
+                <value>com.test.EmpDao</value>
+                <value>com.test.DeptDao</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>service</value>
+            </list>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring02ioc" />
+        <module name="springannotationtx" />
+        <module name="dao" />
+        <module name="springaop" />
+        <module name="spring19mvcrecivedate" />
+        <module name="springmybatisduridbetter2" />
+        <module name="spring24lanjieqitest" />
+        <module name="springdbutilsdruid" />
+        <module name="springmybatisduird" />
+        <module name="spring16mvchello" />
+        <module name="service" />
+        <module name="spring23mvcjson" />
+        <module name="springaopadvicepoint" />
+        <module name="springaopadvisor" />
+        <module name="springcodemybatis" />
+        <module name="springaopadvice" />
+        <module name="spring21validation" />
+        <module name="springcodecontaineriocaoptx" />
+        <module name="springannotationcontaineriocaop" />
+        <module name="spring22mvcview" />
+        <module name="springtx" />
+        <module name="springtxmybatis" />
+        <module name="spring30serveltcode" />
+        <module name="spring25mvcfile" />
+        <module name="spring20mvatestinsert" />
+        <module name="web" />
+        <module name="spring18mvcmappering" />
+        <module name="spring04logback" />
+        <module name="spring28ssmxm" />
+        <module name="spring03autowire" />
+        <module name="springmybatisduridbetter" />
+        <module name="spring32ssmcode" />
+        <module name="entity" />
+        <module name="springtxtest" />
+        <module name="spring01context" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring21mvcview" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

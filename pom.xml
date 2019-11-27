@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <encoding>UTF-8</encoding>
+    </properties>
+
+    <groupId>com.hsl</groupId>
+    <artifactId>springcontext</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring01context</module>
+        <module>spring02ioc</module>
+        <module>spring03autowire</module>
+        <module>spring04logback</module>
+        <module>springdbutilsdruid</module>
+        <module>springmybatisduird</module>
+        <module>springmybatisduridbetter</module>
+        <module>springaop</module>
+        <module>springaopadvice</module>
+        <module>springmybatisduridbetter2</module>
+        <module>springaopadvicepoint</module>
+        <module>springaopadvisor</module>
+        <module>springtx</module>
+        <module>springtxmybatis</module>
+        <module>springtxtest</module>
+        <module>springannotationcontaineriocaop</module>
+        <module>springannotationtx</module>
+        <module>springcodecontaineriocaoptx</module>
+        <module>springcodemybatis</module>
+        <module>spring16mvchello</module>
+        <module>spring18mvcmappering</module>
+        <module>spring19mvcrecivedate</module>
+        <module>spring20mvatestinsert</module>
+        <module>spring21validation</module>
+
+        <module>spring22mvcview</module>
+        <module>spring23mvcjson</module>
+        <module>spring24lanjieqitest</module>
+        <module>spring25mvcfile</module>
+        <module>spring28ssmxm</module>
+        <module>spring29duoduo</module>
+        <module>spring30serveltcode</module>
+        <module>spring32ssmcode</module>
+    </modules>
+
+
+</project>

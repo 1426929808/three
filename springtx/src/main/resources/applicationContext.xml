@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/demo"></property>
+        <property name="password" value="root"></property>
+        <property name="username" value="root"></property>
+    </bean>
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean id="baseDao" abstract="true">
+        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+    </bean>
+    <bean id="deptDao" class="com.dao.DeptDao" parent="baseDao">
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+    </bean>
+    <bean id="empDao" class="com.dao.EmployeeDao" parent="baseDao">
+<!--        <property name="jdbcTemplate" ref="jdbcTemplate"></property>-->
+    </bean>
+    <bean id="service" class="com.service.impl.DeptServiceImpl">
+        <property name="deptDao" ref="deptDao"></property>
+        <property name="employeeDao" ref="empDao"></property>
+    </bean>
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--
+       tx:advice的事务管理器设置:
+       如果你配置的事务管理器的名字就叫做transactionManager,
+       那么transaction-manager就可以不用设置
+   -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+<!--            可以匹配多个method，也支持通配符的写法-->
+<!--            delete*匹配delete开头的方法-->
+            <tx:method name="delete*"></tx:method>
+<!--            <tx:method name="deleteDeptWithEmpbydeptid"/>-->
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="point" expression="execution(* com.service..*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="point"></aop:advisor>
+    </aop:config>
+</beans>
